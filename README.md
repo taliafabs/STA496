@@ -1,9 +1,13 @@
 # STA496 Readings in Statistics Course: Statistical Methods for Election Forecasting and Polling
 
 ### ℹ️ Course Information
-Student: Talia Fabregas \\
+Student: Talia Fabregas 
+
 Supervisor: Professor Rohan Alexander
+
 University of Toronto, Department of Statistical Sciences
+
+Semester: Summer 2025
 
 ### 📘 Course Overview
 This readings course explores the application of statistical methods to election analysis and forecasting, with a focus on real-world survey data and voter behavior modeling. Topics include:
