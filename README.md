@@ -9,23 +9,13 @@ University of Toronto, Department of Statistical Sciences
 This readings course explores the application of statistical methods to election analysis and forecasting, with a focus on real-world survey data and voter behavior modeling. Topics include:
 
 - Polling bias and non-response patterns
-- 
 - Voter modeling using probabilistic and regression-based methods
-- 
 - Impacts of the late 2024 Democratic nominee change
-- 
 - Analysis of Canadian federal and U.S. presidential elections
-- 
 - Throughout the course, I engage with a wide range of statistical tools, including:
-- 
-- Logistic and linear regression
-- 
-- Regularization (e.g., Lasso)
-- 
+- Regression
 - Survey and sampling methodologies
-- 
 - Time series models
-- 
 - Simulation-based forecasting techniques
 
 By the end of the course, I aim to produce deliverables that demonstrate statistical rigor and strong communication, both for professional technical and non-technical audiences.
