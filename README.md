@@ -9,7 +9,7 @@ University of Toronto, Department of Statistical Sciences
 
 Semester: Summer 2025
 
-### 📘 Course Overview
+### 📝 Course Overview
 This readings course explores the application of statistical methods to election analysis and forecasting, with a focus on real-world survey data and voter behavior modeling. Topics include:
 
 - Polling bias and non-response patterns
@@ -23,5 +23,10 @@ This readings course explores the application of statistical methods to election
 - Simulation-based forecasting techniques
 
 By the end of the course, I aim to produce deliverables that demonstrate statistical rigor and strong communication, both for professional technical and non-technical audiences.
+
+### 🔗 GitHub Repo Links
+The code and data used for the following projects that I completed as part of this readings course can be found below:
+- Data driven article:
+- Vote choice model paper:
 
 
