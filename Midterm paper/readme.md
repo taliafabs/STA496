@@ -1,1 +1,1 @@
-# Write readme here
+# STA496 Midterm Paper
