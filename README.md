@@ -15,12 +15,14 @@ This readings course explores the application of statistical methods to election
 - Polling bias and non-response patterns
 - Voter modeling using probabilistic and regression-based methods
 - Impacts of the late 2024 Democratic nominee change
-- Analysis of Canadian federal and U.S. presidential elections
+- Analysis of U.S. presidential elections
 - Throughout the course, I engage with a wide range of statistical tools, including:
-- Regression
+- Regression and classification
 - Survey and sampling methodologies
 - Time series models
-- Simulation-based forecasting techniques
+- Bayesian analysis
+- Machine learning
+- Optimization
 
 By the end of the course, I aim to produce deliverables that demonstrate statistical rigor and strong communication, both for professional technical and non-technical audiences.
 
