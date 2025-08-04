@@ -8,6 +8,7 @@ Why did Americans elect Trump (again) in 2024? This project aims to identify key
 * Additionally, I obtained historical presidential results data from FiveThirtyEight. I downloaded it from their GitHub repo via url and it can be found using this link: https://github.com/fivethirtyeight/election-results/blob/main/election_results_presidential.csv
 
 ## Inspirations 🧠
+This project was inspired by the works of Kuriwaki et al., Algara et al., and Camatarri. Their publications can be found using the following links:
 * https://www.cambridge.org/core/journals/american-political-science-review/article/geography-of-racially-polarized-voting-calibrating-surveys-at-the-district-level/6BEF8C3000B763699C27A4F9E8590516
 * https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/forecasting-partisan-collective-accountability-during-the-2024-us-presidential-and-congressional-elections/9D6C577734D4FDB6CEED4256C60EE4BD
 * https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/predicting-popularvote-shares-in-us-presidential-elections-a-modelbased-strategy-relying-on-anes-data/CC6B59BAC456CAC43C96F27FBAAF2290#article
