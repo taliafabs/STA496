@@ -7,5 +7,6 @@ Why did Americans elect Trump (again) in 2024?
 ## Contents
 * `code` contains the python notebooks with data cleaning and model training/optimization code.
 * `datasets` contains the cleaned data that I used for analysis purposes
+* `visualizations` contains .png versions of the visualizations included in the Exploratory Data Analysis section
 ## Links
 https://colab.research.google.com/drive/1hoV7zWkXoaG13T8iA9hn7XKn85SvQDwM?usp=sharing
