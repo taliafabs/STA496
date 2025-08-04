@@ -16,7 +16,7 @@ This project was inspired by the works of Kuriwaki et al., Algara et al., and Ca
 
 ## Contents 📚
 * `code` contains the python notebooks with data cleaning and model training/optimization code. Note: the MidtermPaperCode.ipynb notebook won't render in GitHub (I believe that this is because PyMC was used for model diagnostics), but I've included the link to the Google Colaboratory. Alternatively, it can be downloaded.
-* `datasets` contains the cleaned data that I used for analysis purposes
+* `data` contains the cleaned data that I used for analysis purposes
 * `visualizations` contains .png versions of the visualizations included in the Exploratory Data Analysis section
   
 ## Links 🔗
