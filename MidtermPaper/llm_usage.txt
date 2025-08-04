@@ -565,6 +565,262 @@ Let me know which version you want to include in your document, or if you’re s
 
 
 
+make this show the percentages in % format cm = confusion_matrix(y_test, y_pred)
+fig = plt.figure(figsize = (8,8))
+ax1 = fig.add_subplot(1,1,1)
+sns.set(font_scale=1.4) #for label size
+sns.heatmap(cm, annot=True, annot_kws={"size": 12},
+     cbar = False, cmap='Purples');
+ax1.set_ylabel('True Values',fontsize=14)
+ax1.set_xlabel('Predicted Values',fontsize=14)
+plt.show()
+
+
+ChatGPT said:
+To show the confusion matrix as percentages rather than raw counts, you can normalize the confusion matrix by dividing each cell by the total number of samples (or by the sum over rows or columns, depending on the percentage you want).
+
+Here’s how to modify your code to display percentages of the total samples in the heatmap annotations:
+
+python
+Copy
+Edit
+from sklearn.metrics import confusion_matrix
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+
+cm = confusion_matrix(y_test, y_pred)
+cm_percent = cm / np.sum(cm) * 100  # convert counts to % of total
+
+fig = plt.figure(figsize=(8,8))
+ax1 = fig.add_subplot(1,1,1)
+sns.set(font_scale=1.4)  # for label size
+
+sns.heatmap(cm_percent, annot=True, fmt=".2f", annot_kws={"size": 12},
+            cbar=False, cmap='Purples', 
+            xticklabels=['Predicted 0', 'Predicted 1'], 
+            yticklabels=['True 0', 'True 1'])
+
+ax1.set_ylabel('True Values', fontsize=14)
+ax1.set_xlabel('Predicted Values', fontsize=14)
+plt.title("Confusion Matrix (%)", fontsize=16)
+plt.show()
+Explanation:
+cm_percent is the confusion matrix normalized by total samples and multiplied by 100 to get percentages.
+
+fmt=".2f" formats the annotations to two decimal places.
+
+I added axis tick labels to make it clear which class is 0 or 1 (you can customize those labels).
+
+If you want percentages by row (i.e., recall percentages), do this instead:
+
+python
+Copy
+Edit
+cm_percent = cm / cm.sum(axis=1, keepdims=True) * 100
+Let me know which percentage style you want and I can adjust!
+
+
+
+
+
+
+
+
+You said:
+make it the total among that class
+
+
+ChatGPT said:
+Got it! To show percentages relative to each true class (i.e., each row sums to 100%), normalize the confusion matrix by rows like this:
+
+python
+Copy
+Edit
+import numpy as np
+from sklearn.metrics import confusion_matrix
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+cm = confusion_matrix(y_test, y_pred)
+cm_percent = cm / cm.sum(axis=1, keepdims=True) * 100  # normalize rows to sum to 100%
+
+fig = plt.figure(figsize=(8,8))
+ax1 = fig.add_subplot(1,1,1)
+sns.set(font_scale=1.4)  # for label size
+
+sns.heatmap(cm_percent, annot=True, fmt=".2f", annot_kws={"size": 12},
+            cbar=False, cmap='Purples', 
+            xticklabels=['Predicted 0', 'Predicted 1'], 
+            yticklabels=['True 0', 'True 1'])
+
+ax1.set_ylabel('True Values', fontsize=14)
+ax1.set_xlabel('Predicted Values', fontsize=14)
+plt.title("Confusion Matrix (Percentages by True Class)", fontsize=16)
+plt.show()
+What this does:
+Each row’s values sum to 100%, showing the percentage of samples within each true class classified into each predicted class.
+
+This reflects class-wise accuracy and misclassification rates as percentages.
+
+Let me know if you want help adjusting labels or styling!
+
+
+
+
+
+
+
+
+You said:
+round to two decimals
+
+
+ChatGPT said:
+You're almost there! To round to two decimals, just ensure fmt=".2f" is set in the sns.heatmap() call, which you already have.
+
+Here’s the complete snippet again, with the rounding clarified:
+
+python
+Copy
+Edit
+import numpy as np
+from sklearn.metrics import confusion_matrix
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+cm = confusion_matrix(y_test, y_pred)
+cm_percent = cm / cm.sum(axis=1, keepdims=True) * 100  # normalize by row (true class)
+
+fig = plt.figure(figsize=(8,8))
+ax1 = fig.add_subplot(1,1,1)
+sns.set(font_scale=1.4)  # for label size
+
+sns.heatmap(cm_percent, annot=True, fmt=".2f",  # two decimal places
+            annot_kws={"size": 12},
+            cbar=False, cmap='Purples',
+            xticklabels=['Predicted 0', 'Predicted 1'],
+            yticklabels=['True 0', 'True 1'])
+
+ax1.set_ylabel('True Values', fontsize=14)
+ax1.set_xlabel('Predicted Values', fontsize=14)
+plt.title("Confusion Matrix (Percentages by True Class)", fontsize=16)
+plt.show()
+✅ This will display each value in the heatmap as a percentage, rounded to two decimal places.
+
+
+
+
+
+
+
+
+You said:
+add a % tick
+
+
+ChatGPT said:
+To add a % sign to each annotation in the heatmap, you can format the strings manually. Here's the updated code with annotations showing percentages rounded to two decimals and including a % sign:
+
+python
+Copy
+Edit
+import numpy as np
+from sklearn.metrics import confusion_matrix
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+cm = confusion_matrix(y_test, y_pred)
+cm_percent = cm / cm.sum(axis=1, keepdims=True) * 100  # normalize by row (true class)
+
+# Format annotations with % sign
+labels = np.array([[f"{val:.2f}%" for val in row] for row in cm_percent])
+
+fig = plt.figure(figsize=(8,8))
+ax1 = fig.add_subplot(1,1,1)
+sns.set(font_scale=1.4)  # for label size
+
+sns.heatmap(cm_percent,
+            annot=labels, fmt="",  # fmt="" so it uses your custom strings
+            annot_kws={"size": 12},
+            cbar=False, cmap='Purples',
+            xticklabels=['Predicted 0', 'Predicted 1'],
+            yticklabels=['True 0', 'True 1'])
+
+ax1.set_ylabel('True Values', fontsize=14)
+ax1.set_xlabel('Predicted Values', fontsize=14)
+plt.title("Confusion Matrix (Percentages by True Class)", fontsize=16)
+plt.show()
+Let me know if you also want to display the raw counts on top of the percentages!
+
+
+
+
+
+
+
+
+You said:
+add % tick # confusion matrix
+cm = confusion_matrix(y_test, y_pred)  
+cm = cm / cm.sum(axis=1, keepdims=True) * 100
+fig = plt.figure(figsize = (8,8))
+ax1 = fig.add_subplot(1,1,1)
+sns.set(font_scale=1.4) #for label size
+sns.heatmap(cm, annot=True, 
+            # fmt = '.2f',
+            annot_kws={"size": 12},
+     cbar = False, cmap='Purples');
+ax1.set_ylabel('True Values',fontsize=14)
+ax1.set_xlabel('Predicted Values',fontsize=14)
+plt.show()
+
+
+ChatGPT said:
+To add a % sign to each value in the heatmap, you need to manually format the annotations instead of using annot=True. Here’s your updated code with:
+
+percentages rounded to two decimals
+
+% sign added to each cell
+
+python
+Copy
+Edit
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+from sklearn.metrics import confusion_matrix
+
+# Compute and normalize confusion matrix
+cm = confusion_matrix(y_test, y_pred)
+cm_normalized = cm / cm.sum(axis=1, keepdims=True) * 100
+
+# Format annotations with % sign
+labels = np.array([[f"{val:.2f}%" for val in row] for row in cm_normalized])
+
+# Plot
+fig = plt.figure(figsize=(8, 8))
+ax1 = fig.add_subplot(1, 1, 1)
+sns.set(font_scale=1.4)
+
+sns.heatmap(cm_normalized,
+            annot=labels, fmt="",  # Use custom labels
+            annot_kws={"size": 12},
+            cbar=False, cmap='Purples')
+
+ax1.set_ylabel('True Values', fontsize=14)
+ax1.set_xlabel('Predicted Values', fontsize=14)
+plt.title("Confusion Matrix (% by True Class)", fontsize=16)
+plt.show()
+This will display each value as e.g. 89.47% in the heatmap cells. Let me know if you want to add class labels or raw counts too.
+
+
+
+
+
+
+
+
 
 
 
