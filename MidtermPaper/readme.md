@@ -14,10 +14,10 @@ This project was inspired by the works of Kuriwaki et al., Algara et al., and Ca
 * https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/predicting-popularvote-shares-in-us-presidential-elections-a-modelbased-strategy-relying-on-anes-data/CC6B59BAC456CAC43C96F27FBAAF2290#article
 
 
-## Contents 📚
+## Contents 🌳
 * `code` contains the python notebooks with data cleaning and model training/optimization code. Note: the MidtermPaperCode.ipynb notebook won't render in GitHub (I believe that this is because PyMC was used for model diagnostics), but I've included the link to the Google Colaboratory. Alternatively, it can be downloaded.
 * `data` contains the cleaned data that I used for analysis purposes
-* `visualizations` contains .png versions of the visualizations included in the Exploratory Data Analysis section
+* `latex` contains the TeX file and png files used in the Overleaf Latex project to produce this paper.
   
 ## Links 🔗
 * Midterm Paper Code: https://colab.research.google.com/drive/1Nv13U3kmJRq9LVnxUBEQtNX9y1gTxjlX?usp=sharing
