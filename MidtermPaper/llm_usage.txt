@@ -708,6 +708,89 @@ plt.title("Confusion Matrix (Percentages by True Class)", fontsize=16)
 plt.show()
 ✅ This will display each value in the heatmap as a percentage, rounded to two decimal places.
 
+cite in ieee https://pypi.org/project/keras/
+
+
+ChatGPT said:
+Here is an appropriate IEEE‑style citation for the Keras project on PyPI, using the latest available information:
+
+less
+Copy
+Edit
+Keras Team, “keras,” PyPI, version 3.11.1, Jul. 31, 2025. [Online]. Available: https://pypi.org/project/keras/  
+Explanation:
+Title: keras (as listed on the PyPI project page) 
+PyPI
++11
+PyPI
++11
+PyPI
++11
+
+Author: Keras Team (maintainers include François Chollet and colleagues) 
+PyPI
++7
+PyPI
++7
+Wikipedia
++7
+
+Version: 3.11.1 (released July 31, 2025) 
+PyPI
++1
+PyPI
++1
+
+Publisher: PyPI (Python Package Index)
+
+Date: Released July 31, 2025 
+ActiveState
++7
+PyPI
++7
+PyPI
++7
+
+URL: https://pypi.org/project/keras/
+
+If you also want to cite tensorflow.keras (the TensorFlow-integrated Keras API), here’s an IEEE citation for the standalone tf-keras PyPI project:
+
+less
+Copy
+Edit
+Keras Team, “tf‑keras,” PyPI, version 2.19.0, Mar. 3, 2025. [Online]. Available: https://pypi.org/project/tf-keras/  
+This references version 2.19.0 released March 3, 2025, as listed for the tf‑keras package 
+Wikipedia
++6
+PyPI
++6
+Stack Overflow
++6
+PyPI
++1
+PyPI
++1
+.
+
+Let me know if you need the BibTeX entry or another citation style!
+
+
+
+
+
+
+
+
+
+
+Sources
+
+
+
+Tools
+
+
+
 
 
 
