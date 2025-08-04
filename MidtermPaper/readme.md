@@ -19,7 +19,8 @@ Why did Americans elect Trump (again) in 2024? This project aims to identify key
 * `visualizations` contains .png versions of the visualizations included in the Exploratory Data Analysis section
   
 ## Links 🔗
-https://colab.research.google.com/drive/1hoV7zWkXoaG13T8iA9hn7XKn85SvQDwM?usp=sharing
+* Midterm Paper Code: https://colab.research.google.com/drive/1Nv13U3kmJRq9LVnxUBEQtNX9y1gTxjlX?usp=sharing
+* Model training and optimization learning diary: https://colab.research.google.com/drive/1hoV7zWkXoaG13T8iA9hn7XKn85SvQDwM?usp=sharing
 
 ## LLM Usage 🤖
 Chat GPT 3.5 was used for latex formatting, IEEE citations, and code debugging.
