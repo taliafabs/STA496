@@ -27,9 +27,4 @@ Throughout the course, I engage with a wide range of statistical tools, includin
 
 By the end of the course, I aim to produce deliverables that demonstrate statistical rigor and strong communication, for professional technical and non-technical audiences.
 
-### 🔗 GitHub Repo Links
-The code and data used for the following projects that I completed as part of this readings course can be found below:
-- Data driven article:
-- Vote choice model paper:
-
 
