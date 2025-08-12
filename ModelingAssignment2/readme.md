@@ -1,1 +1,1 @@
-# Modeling Assignment 2
+# Modeling Assignment 2: Midterm Paper Extension
