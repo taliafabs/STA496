@@ -16,15 +16,16 @@ This readings course explores the application of statistical methods to election
 - Voter modeling using probabilistic and regression-based methods
 - Impacts of the late 2024 Democratic nominee change
 - Analysis of U.S. presidential elections
-- Throughout the course, I engage with a wide range of statistical tools, including:
+  
+Throughout the course, I engage with a wide range of statistical tools, including:
 - Regression and classification
 - Survey and sampling methodologies
 - Time series models
 - Bayesian analysis
 - Machine learning
-- Optimization
+- Optimization and generalization
 
-By the end of the course, I aim to produce deliverables that demonstrate statistical rigor and strong communication, both for professional technical and non-technical audiences.
+By the end of the course, I aim to produce deliverables that demonstrate statistical rigor and strong communication, for professional technical and non-technical audiences.
 
 ### 🔗 GitHub Repo Links
 The code and data used for the following projects that I completed as part of this readings course can be found below:
