@@ -6,6 +6,5 @@ My final project builds on my midterm paper in the following ways:
 * Discussing what strong performance on two additional dataasets means for my project.
 * Presenting my findings in a short video, intended for academic (but not necessarily statistical) audiences.
 
-Final project repo link: https://github.com/taliafabs/LogisticVoteChoice.git
 
-I've included a copy of my final paper in this folder, but it's probably better to go to my [LogisticVoteChoice](https://github.com/taliafabs/LogisticVoteChoice.git) project repo.
+I've included a copy of my final paper in this folder, but it's probably better to visit my [LogisticVoteChoice](https://github.com/taliafabs/LogisticVoteChoice.git) project repo.
